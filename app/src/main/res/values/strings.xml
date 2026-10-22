@@ -21,18 +21,18 @@
     <string name="devices_provision">Configura nuovo dispositivo</string>
 
     <!-- Controllo lavatrice -->
-    <string name="home_badge_paused">IN PAUSA</string>
-    <string name="home_badge_running">IN FUNZIONE</string>
-    <string name="home_running_details">%1$d°C  ·  %2$d rpm</string>
-    <string name="home_resume">Riprendi</string>
-    <string name="home_pause">Pausa</string>
-    <string name="home_stop">Stop</string>
-    <string name="home_reset">Resetta</string>
-    <string name="home_remote_warning">Porta la manopola sulla posizione Wi-Fi per abilitare il controllo remoto.</string>
-    <string name="home_error_code">Errore: E%1$d</string>
-    <string name="home_program_settings">Impostazioni programma</string>
-    <string name="home_start_program">Avvia programma</string>
-    <string name="home_select_placeholder">Seleziona…</string>
+    <string name="control_badge_paused">IN PAUSA</string>
+    <string name="control_badge_running">IN FUNZIONE</string>
+    <string name="control_running_details">%1$d°C  ·  %2$d rpm</string>
+    <string name="control_resume">Riprendi</string>
+    <string name="control_pause">Pausa</string>
+    <string name="control_stop">Stop</string>
+    <string name="control_reset">Resetta</string>
+    <string name="control_remote_warning">Porta la manopola sulla posizione Wi-Fi per abilitare il controllo remoto.</string>
+    <string name="control_error_code">Errore: E%1$d</string>
+    <string name="control_program_settings">Impostazioni programma</string>
+    <string name="control_start_program">Avvia programma</string>
+    <string name="control_select_placeholder">Seleziona…</string>
     <string name="label_program">Programma</string>
     <string name="label_temperature">Temperatura</string>
     <string name="label_spin">Centrifuga</string>

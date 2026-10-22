@@ -1,4 +1,4 @@
-package it.tourtools.gandy.ui.home
+package it.tourtools.gandy.ui.control
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -6,9 +6,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import it.tourtools.gandy.data.CandyCommands
 import it.tourtools.gandy.data.CandyNetwork
 import it.tourtools.gandy.data.CandyRepository
-import it.tourtools.gandy.data.model.WashingMachineStatus
 import it.tourtools.gandy.data.toUiText
-import it.tourtools.gandy.ui.common.UiText
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -18,29 +16,13 @@ import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-data class HomeUiState(
-    val ip: String = "",
-    val status: WashingMachineStatus? = null,
-    val loading: Boolean = false,
-    val error: UiText? = null,
-    val selectedPr: Int = NO_SELECTION,
-    val selectedPrCode: Int = NO_SELECTION,
-    val selectedTemp: Int = NO_SELECTION,
-    val selectedSpin: Int = NO_SELECTION,
-    val cycleTotalTime: Int = 0,
-) {
-    companion object {
-        const val NO_SELECTION = -1
-    }
-}
-
 @HiltViewModel
-class HomeViewModel @Inject constructor(
+class ControlViewModel @Inject constructor(
     private val repo: CandyRepository,
 ) : ViewModel() {
 
-    private val _state = MutableStateFlow(HomeUiState())
-    val state: StateFlow<HomeUiState> = _state.asStateFlow()
+    private val _state = MutableStateFlow(ControlUiState())
+    val state: StateFlow<ControlUiState> = _state.asStateFlow()
 
     private var pollingJob: Job? = null
     private var selectionsInitialized = false
@@ -48,7 +30,7 @@ class HomeViewModel @Inject constructor(
     fun connect(ip: String) {
         if (ip == _state.value.ip) return
         selectionsInitialized = false
-        _state.update { HomeUiState(ip = ip) }
+        _state.update { ControlUiState(ip = ip) }
         startPolling(ip)
     }
 

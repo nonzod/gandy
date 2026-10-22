@@ -3,8 +3,6 @@ package it.tourtools.gandy.ui.devices
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
-import it.tourtools.gandy.data.CandyNetwork
-import it.tourtools.gandy.data.CandyProtocol
 import it.tourtools.gandy.data.CandyRepository
 import it.tourtools.gandy.data.model.Appliance
 import kotlinx.coroutines.flow.SharingStarted
@@ -28,21 +26,6 @@ class DevicesViewModel @Inject constructor(
 
     fun removeAppliance(id: String) {
         viewModelScope.launch { repo.removeAppliance(id) }
-    }
-
-    /** Invia le credenziali Wi-Fi al dispositivo; in caso di successo restituisce la chiave generata. */
-    suspend fun provision(ssid: String, password: String): Result<String> {
-        val key = generateKey()
-        return try {
-            repo.provision(CandyNetwork.PROVISIONING_IP, ssid, password, key)
-            Result.success(key)
-        } catch (e: Exception) {
-            Result.failure(e)
-        }
-    }
-
-    private fun generateKey(): String = buildString {
-        repeat(CandyProtocol.XOR_KEY_LENGTH) { append(CandyProtocol.XOR_KEY_CHARSET.random()) }
     }
 
     private companion object {
