@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">Gandy</string>
+
+    <!-- Comuni -->
+    <string name="action_back">Indietro</string>
+    <string name="action_refresh">Aggiorna</string>
+    <string name="action_add">Aggiungi</string>
+    <string name="action_remove">Rimuovi</string>
+    <string name="action_cancel">Annulla</string>
+    <string name="action_ok">OK</string>
+    <string name="label_name">Nome</string>
+    <string name="label_ip_address">Indirizzo IP</string>
+    <string name="placeholder_device_name">es. Lavatrice</string>
+    <string name="placeholder_ip_address">es. 192.168.1.100</string>
+
+    <!-- Lista dispositivi -->
+    <string name="devices_empty_title">Nessun dispositivo</string>
+    <string name="devices_empty_subtitle">Aggiungi la tua lavatrice per iniziare</string>
+    <string name="devices_add">Aggiungi dispositivo</string>
+    <string name="devices_provision_empty">Configura nuovo (Wi-Fi)</string>
+    <string name="devices_provision">Configura nuovo dispositivo</string>
+
+    <!-- Controllo lavatrice -->
+    <string name="home_badge_paused">IN PAUSA</string>
+    <string name="home_badge_running">IN FUNZIONE</string>
+    <string name="home_running_details">%1$d°C  ·  %2$d rpm</string>
+    <string name="home_resume">Riprendi</string>
+    <string name="home_pause">Pausa</string>
+    <string name="home_stop">Stop</string>
+    <string name="home_reset">Resetta</string>
+    <string name="home_remote_warning">Porta la manopola sulla posizione Wi-Fi per abilitare il controllo remoto.</string>
+    <string name="home_error_code">Errore: E%1$d</string>
+    <string name="home_program_settings">Impostazioni programma</string>
+    <string name="home_start_program">Avvia programma</string>
+    <string name="home_select_placeholder">Seleziona…</string>
+    <string name="label_program">Programma</string>
+    <string name="label_temperature">Temperatura</string>
+    <string name="label_spin">Centrifuga</string>
+    <string name="value_temperature">%1$d°C</string>
+    <string name="value_rpm">%1$d rpm</string>
+    <string name="remaining_hours_minutes">%1$dh %2$dmin</string>
+    <string name="remaining_minutes">%1$dmin</string>
+
+    <!-- Stati macchina (MachMd) -->
+    <string name="mode_ready">Pronta</string>
+    <string name="mode_running">In funzione</string>
+    <string name="mode_paused">In pausa</string>
+    <string name="mode_delayed">Partenza ritardata</string>
+    <string name="mode_error">Errore</string>
+    <string name="mode_done">Terminato</string>
+    <string name="mode_unknown">Stato %1$d</string>
+
+    <!-- Programmi (PrCode) -->
+    <string name="program_cotton_resistant">Cotone Resistente</string>
+    <string name="program_cotton_standard">Cotone Standard</string>
+    <string name="program_synthetics">Sintetici e Colorati</string>
+    <string name="program_wool">Lana</string>
+    <string name="program_delicates">Delicati</string>
+    <string name="program_rapid_14">Rapido 14\'</string>
+    <string name="program_rapid_30">Rapido 30\'</string>
+    <string name="program_rapid_44">Rapido 44\'</string>
+    <string name="program_rapid_59">Rapido 59\'</string>
+    <string name="program_rinse">Risciacqui</string>
+    <string name="program_drain_spin">Scarico &amp; Centrifuga</string>
+    <string name="program_steam">Vapore</string>
+    <string name="program_unknown">Programma %1$d</string>
+
+    <!-- Fasi (PrPh) -->
+    <string name="phase_ready">Pronta</string>
+    <string name="phase_prewash">Prelavaggio</string>
+    <string name="phase_wash">Lavaggio</string>
+    <string name="phase_rinse">Risciacquo</string>
+    <string name="phase_last_rinse">Ultimo risciacquo</string>
+    <string name="phase_end">Fine</string>
+    <string name="phase_drying">Asciugatura</string>
+    <string name="phase_error">Errore</string>
+    <string name="phase_steam">Vapore</string>
+    <string name="phase_spin">Centrifuga</string>
+    <string name="phase_unknown">Fase %1$d</string>
+    <string name="phase_short_prewash">Prelav.</string>
+
+    <!-- Opzioni -->
+    <string name="temperature_cold">Freddo</string>
+    <string name="spin_none">No centrifuga</string>
+
+    <!-- Configurazione nuovo dispositivo -->
+    <string name="provision_title">Nuovo dispositivo</string>
+    <string name="provision_step_preparation">Preparazione</string>
+    <string name="provision_step_wifi">Rete Wi-Fi</string>
+    <string name="provision_step_save">Salvataggio</string>
+    <string name="provision_instruction_1">Posiziona la manopola su Wi-Fi</string>
+    <string name="provision_instruction_2">Tieni premuto Avvio per 5 secondi fino al lampeggio rapido Wi-Fi</string>
+    <string name="provision_instruction_3">Connettiti alla rete aperta del dispositivo (es. CANDY_WASHING_xxxx)</string>
+    <string name="provision_instruction_4">Torna qui quando sei connesso</string>
+    <string name="provision_connected">Sono connesso alla rete del dispositivo</string>
+    <string name="provision_wifi_title">Rete Wi-Fi di casa</string>
+    <string name="provision_wifi_description">Inserisci le credenziali della tua rete Wi-Fi domestica (solo 2.4 GHz).</string>
+    <string name="provision_ssid">Nome rete (SSID)</string>
+    <string name="provision_password">Password</string>
+    <string name="provision_send">Invia configurazione</string>
+    <string name="provision_sent_title">Configurazione inviata!</string>
+    <string name="provision_sent_description">Il dispositivo si sta connettendo alla tua rete Wi-Fi. Ora:</string>
+    <string name="provision_final_1">Riconnettiti alla tua rete Wi-Fi domestica</string>
+    <string name="provision_final_2">Trova l\'IP assegnato al dispositivo dal router</string>
+    <string name="provision_final_3">Compila i campi qui sotto</string>
+    <string name="provision_key">Chiave:</string>
+    <string name="provision_device_name">Nome dispositivo</string>
+    <string name="provision_save">Salva dispositivo</string>
+
+    <!-- Errori di rete / protocollo -->
+    <string name="error_unknown">Errore sconosciuto</string>
+    <string name="error_empty_response">Risposta vuota</string>
+    <string name="error_no_status">Nessun dato statusLavatrice</string>
+    <string name="error_response_too_short">Risposta troppo corta per il recupero chiave</string>
+    <string name="error_key_recovery">Impossibile recuperare la chiave di crittografia</string>
+    <string name="error_timeout">Timeout — la lavatrice non risponde. Verifica che sia accesa e sulla stessa rete WiFi.</string>
+    <string name="error_connection_refused">Connessione rifiutata — verifica l\'IP e che il telefono sia sulla stessa rete WiFi della lavatrice.</string>
+    <string name="error_unknown_host">Indirizzo non trovato — verifica l\'IP inserito.</string>
+</resources>
