@@ -36,6 +36,7 @@ import it.nicolatomassoni.gandy.ui.components.GandyTopBar
 import it.nicolatomassoni.gandy.ui.control.components.ActionButtons
 import it.nicolatomassoni.gandy.ui.control.components.DoneActions
 import it.nicolatomassoni.gandy.ui.control.components.IdleCard
+import it.nicolatomassoni.gandy.ui.control.components.OfflineCard
 import it.nicolatomassoni.gandy.ui.control.components.PhaseIndicator
 import it.nicolatomassoni.gandy.ui.control.components.ProgramControls
 import it.nicolatomassoni.gandy.ui.control.components.RemoteWarningCard
@@ -126,6 +127,11 @@ private fun StatusContent(state: ControlUiState, actions: ControlActions) {
         ) {
             CircularProgressIndicator()
         }
+        return
+    }
+
+    if (status == null && state.error != null) {
+        OfflineCard(onRetry = actions.onRefresh)
         return
     }
 

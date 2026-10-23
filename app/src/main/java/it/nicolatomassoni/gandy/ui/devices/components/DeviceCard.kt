@@ -17,6 +17,7 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
 import androidx.compose.material.icons.filled.Delete
 import androidx.compose.material.icons.outlined.LocalLaundryService
+import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Icon
@@ -66,6 +67,7 @@ internal fun DeviceCard(
     appliance: Appliance,
     colorIndex: Int = 0,
     onSelect: () -> Unit,
+    onShare: () -> Unit,
     onRemove: () -> Unit,
 ) {
     val colorPairs = deviceColorPairs()
@@ -112,6 +114,14 @@ internal fun DeviceCard(
                     appliance.ip,
                     style = MaterialTheme.typography.bodySmall,
                     color = MaterialTheme.colorScheme.onSurfaceVariant,
+                )
+            }
+            IconButton(onClick = onShare) {
+                Icon(
+                    Icons.Outlined.Share,
+                    contentDescription = stringResource(R.string.action_share),
+                    tint = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.7f),
+                    modifier = Modifier.size(20.dp),
                 )
             }
             IconButton(onClick = onRemove) {

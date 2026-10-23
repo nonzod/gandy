@@ -27,6 +27,7 @@ import it.nicolatomassoni.gandy.data.model.Appliance
 internal fun DeviceList(
     appliances: List<Appliance>,
     onSelect: (Appliance) -> Unit,
+    onShare: (Appliance) -> Unit,
     onRemove: (String) -> Unit,
     onProvision: () -> Unit,
     modifier: Modifier = Modifier,
@@ -43,6 +44,7 @@ internal fun DeviceList(
                 appliance = appliance,
                 colorIndex = index,
                 onSelect = { onSelect(appliance) },
+                onShare = { onShare(appliance) },
                 onRemove = { onRemove(appliance.id) },
             )
         }

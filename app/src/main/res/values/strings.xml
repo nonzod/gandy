@@ -20,6 +20,18 @@
     <string name="devices_provision_empty">Configura nuovo (Wi-Fi)</string>
     <string name="devices_provision">Configura nuovo dispositivo</string>
 
+    <!-- Condivisione QR -->
+    <string name="action_share">Condividi</string>
+    <string name="action_scan_qr">Scansiona QR Code</string>
+    <string name="qr_share_title">Condividi dispositivo</string>
+    <string name="qr_scan_prompt">Inquadra il QR code del dispositivo</string>
+    <string name="qr_or_manual">oppure inserisci manualmente</string>
+
+    <!-- Offline -->
+    <string name="control_offline_title">Lavatrice offline</string>
+    <string name="control_offline_subtitle">Impossibile raggiungere il dispositivo. Verifica che sia acceso e sulla stessa rete Wi-Fi.</string>
+    <string name="control_offline_retry">Riprova</string>
+
     <!-- Controllo lavatrice -->
     <string name="control_badge_paused">IN PAUSA</string>
     <string name="control_badge_running">IN CORSO</string>

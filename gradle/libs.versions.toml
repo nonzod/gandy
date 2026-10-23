@@ -7,6 +7,8 @@ hilt = "2.51.1"
 okhttp = "4.12.0"
 serialization = "1.7.1"
 datastore = "1.1.1"
+zxingCore = "3.5.3"
+zxingEmbedded = "4.3.0"
 lifecycle = "2.8.5"
 activityCompose = "1.9.2"
 hiltNavigationCompose = "1.2.0"
@@ -27,6 +29,8 @@ hilt-navigation-compose = { group = "androidx.hilt", name = "hilt-navigation-com
 okhttp = { group = "com.squareup.okhttp3", name = "okhttp", version.ref = "okhttp" }
 serialization-json = { group = "org.jetbrains.kotlinx", name = "kotlinx-serialization-json", version.ref = "serialization" }
 datastore-preferences = { group = "androidx.datastore", name = "datastore-preferences", version.ref = "datastore" }
+zxing-core = { group = "com.google.zxing", name = "core", version.ref = "zxingCore" }
+zxing-embedded = { group = "com.journeyapps", name = "zxing-android-embedded", version.ref = "zxingEmbedded" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
