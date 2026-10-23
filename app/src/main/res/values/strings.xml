@@ -22,12 +22,14 @@
 
     <!-- Controllo lavatrice -->
     <string name="control_badge_paused">IN PAUSA</string>
-    <string name="control_badge_running">IN FUNZIONE</string>
+    <string name="control_badge_running">IN CORSO</string>
     <string name="control_running_details">%1$d°C  ·  %2$d rpm</string>
     <string name="control_resume">Riprendi</string>
     <string name="control_pause">Pausa</string>
-    <string name="control_stop">Stop</string>
+    <string name="control_stop">Interrompi</string>
     <string name="control_reset">Resetta</string>
+    <string name="control_remote_active">Remoto attivo</string>
+    <string name="control_done_title">Il bucato è pronto!</string>
     <string name="control_remote_warning">Porta la manopola sulla posizione Wi-Fi per abilitare il controllo remoto.</string>
     <string name="control_error_code">Errore: E%1$d</string>
     <string name="control_program_settings">Impostazioni programma</string>

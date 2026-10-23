@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "it.tourtools.gandy"
+    namespace = "it.nicolatomassoni.gandy"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "it.tourtools.gandy"
+        applicationId = "it.nicolatomassoni.gandy"
         minSdk = 26
         targetSdk = 35
         versionCode = 1
