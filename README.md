@@ -20,7 +20,7 @@ tools/build.sh --update-version release   # 0.2.0 → 0.3.0
 tools/build.sh --update-version major     # 0.2.0 → 1.0.0
 ```
 
-L'APK viene generato come `gandy-<versione>.apk` in `app/build/outputs/apk/release/`.
+L'APK viene generato come `gandy-<versione>.apk` in `app/build/outputs/apk/release/`, l'AAB per Google Play come `gandy-<versione>.aab` in `app/build/outputs/bundle/release/`.
 
 Il flag `--update-version` aggiorna `versionName` e `versionCode` in `app/build.gradle.kts` prima di compilare.
 

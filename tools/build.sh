@@ -8,7 +8,8 @@ GRADLE_FILE="$PROJECT_DIR/app/build.gradle.kts"
 usage() {
     echo "Usage: $0 [--update-version major|release|fix]"
     echo ""
-    echo "Builds the project for production (assembleRelease)."
+    echo "Builds the project for production: signed APK (assembleRelease)"
+    echo "and AAB for Google Play (bundleRelease)."
     echo ""
     echo "Options:"
     echo "  --update-version TYPE   Increment version before building."
@@ -62,9 +63,9 @@ if [[ -n "$update_version" ]]; then
     echo "Version: $current_name → $new_name (code: $current_code → $new_code)"
 fi
 
-echo "Building release APK..."
+echo "Building release APK + AAB..."
 cd "$PROJECT_DIR"
-./gradlew assembleRelease
+./gradlew assembleRelease bundleRelease
 
 version=$(grep -oP 'versionName\s*=\s*"\K[^"]+' "$GRADLE_FILE")
 apk_path=$(find "$PROJECT_DIR/app/build/outputs/apk/release" -name "*.apk" 2>/dev/null | head -1)
@@ -73,4 +74,11 @@ if [[ -n "$apk_path" ]]; then
     mv "$apk_path" "$dest"
     echo ""
     echo "APK: $dest"
+fi
+
+aab_path=$(find "$PROJECT_DIR/app/build/outputs/bundle/release" -name "*.aab" 2>/dev/null | head -1)
+if [[ -n "$aab_path" ]]; then
+    dest="$PROJECT_DIR/app/build/outputs/bundle/release/gandy-${version}.aab"
+    [[ "$aab_path" != "$dest" ]] && mv "$aab_path" "$dest"
+    echo "AAB: $dest"
 fi
