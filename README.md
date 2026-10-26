@@ -2,6 +2,8 @@
 
 App Android per controllare lavatrici Candy/Hoover con modulo WiFi SimplyFi, 100% in locale sulla LAN.
 
+[Scarica l'app per Android](https://apkpure.com/p/it.nicolatomassoni.gandy)
+
 ## Stack
 
 Kotlin, Jetpack Compose, Material 3, Hilt, OkHttp, DataStore. Min SDK 26.
